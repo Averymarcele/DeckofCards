@@ -27,31 +27,31 @@ class Deck:
     def count(self):
         return len(self.deck)
     
-    print("Welcome to the Deck of Cards!")
-    print("There is a deck of 52 cards")
+print("Welcome to the Deck of Cards!")
+print("There is a deck of 52 cards")
     
-    deck = deck()
+deck = Deck()
     
-    deck.shuffle()
+deck.shuffle()
     
-    num_cards_to_deal = int(input("How many cards would you like?"))
-    dealt_cards = []
+num_cards_to_deal = int(input("How many cards would you like?"))
+dealt_cards = []
     
-    for _ in range(num_cards_to_deal):
-        card = deck.deal()
-        if card is not None:
-            dealt_cards.appeal(f"{card.rank} of {card.suit}")
-        else:
-            print("No more cards in the deck")
+for _ in range(num_cards_to_deal):
+    card = deck.deal()
+    if card is not None:
+        dealt_cards.appeal(f"{card.rank} of {card.suit}")
+    else:
+        print("No more cards in the deck")
      
-        if dealt_cards:
-            print("Death cards:")
-        for card in dealt_cards:
-            print(card)
+if dealt_cards:
+    print("Death cards:")
+    for card in dealt_cards:
+        print(card)
             
-    remanining_count = deck.count()
-    print(f"There are {remanining_count} cards left in the deck")
+remanining_count = deck.count()
+print(f"There are {remanining_count} cards left in the deck")
 
-    print("Good Luck")
+print("Good Luck")
     
           
